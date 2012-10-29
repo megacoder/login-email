@@ -1,3 +1,3 @@
-bin_SCRIPTS=logil-email.sh
+data_SCRIPT=logil-email.sh
 
 EXTRA_DIST=login-email.sh
