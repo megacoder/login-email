@@ -14,7 +14,7 @@ if [ -f "${CONFIG}" ]; then
 	done
 fi
 
-if [ "${watchfor[${USER}]}" != '' ]; then
+if [ "${watchfor[${USER}]}" ]; then
 	(
 		FMT='%7s:  %s\n'
 		/bin/printf "${FMT}" 'Date' "$(/bin/date)"
