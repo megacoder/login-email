@@ -4,8 +4,8 @@
 
 Prefix: %{prefix}
 
-Summary: Convert errno or h_errno codes to names and vice versa
-Name: errno
+Summary: Automatically send an email as certain users log in.
+Name: login-email
 Version: %{ver}
 Release: %{rel}
 Source: http://ftp.megacoder.com/errno/%{name}-%{ver}.tar.gz
@@ -13,14 +13,13 @@ License: GPLv2
 URL: http://www.megacoder.com/
 Group: Applications/System
 Buildroot: %{_tmppath}/%{name}-root
-BuildRequires: popt-devel
 
 %description
-You can use %{name}(1) to translate a numeric system error code into the
-spelling used by the programmer and to also see a copy of the defined
-textual meaning of that code.  By default, the errno value from a
-system call or library function is decoded, but if the --network
-switch is used, the h_errno values are decoded instead.
+An interesting event is when a login shell reads from the standard
+login scripts in /etc/profile.d before the login session gets any
+further control.  Using the %{name}(1) tool automatically sends an
+audit email as part of this process, before the login shell presents
+its first prompt.
 
 %prep
 
