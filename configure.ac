@@ -20,6 +20,8 @@ AC_CONFIG_MACRO_DIR([m4])
 
 AC_CONFIG_FILES([
         Makefile
-        profile.d/Makefile
+	src/Makefile
+	src/etc/Makefile
+        src/etc/profile.d/Makefile
 ])
 AC_OUTPUT
