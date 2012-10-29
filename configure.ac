@@ -23,5 +23,6 @@ AC_CONFIG_FILES([
 	src/Makefile
 	src/etc/Makefile
         src/etc/profile.d/Makefile
+	login-email.spec
 ])
 AC_OUTPUT
