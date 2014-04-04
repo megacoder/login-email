@@ -13,6 +13,7 @@ License: GPLv2
 URL: http://www.megacoder.com/
 Group: Applications/System
 Buildroot: %{_tmppath}/%{name}-root
+BuildArch: noarch
 
 %description
 An interesting event is when a login shell reads from the standard
@@ -42,5 +43,5 @@ its first prompt.
 %lang(en_US) %{_datadir}/locale/en_US/LC_MESSAGES/%{name}.mo
 
 %changelog
-* Tue May 16 2009 Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+* Thu Apr  3 2014 Tommy Reynolds <oldest.software.guy@gmail.com>
 - Booger
