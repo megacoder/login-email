@@ -5,7 +5,7 @@ AC_PREREQ([2.68])
 AC_INIT([login-email], [0.0.0], [Tommy.Reynolds@MegaCoder.com])
 
 AM_INIT_AUTOMAKE
-AC_CONFIG_SRCDIR([src])
+AC_CONFIG_SRCDIR([login-email.sh])
 AC_CONFIG_MACRO_DIR([m4])
 
 # Checks for programs.
@@ -20,9 +20,6 @@ AC_CONFIG_MACRO_DIR([m4])
 
 AC_CONFIG_FILES([
         Makefile
-	src/Makefile
-	src/etc/Makefile
-        src/etc/profile.d/Makefile
 	login-email.spec
 ])
 AC_OUTPUT

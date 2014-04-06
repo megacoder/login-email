@@ -1,6 +1,6 @@
 %define ver @VERSION@
 %define rel 1
-%define prefix /usr
+%define prefix /
 
 Prefix: %{prefix}
 
@@ -23,24 +23,20 @@ audit email as part of this process, before the login shell presents
 its first prompt.
 
 %prep
-
-%setup -q
+	exit	0
 %build
-	CFLAGS="$RPM_OPT_FLAGS" ./configure --prefix=%{prefix}
-	make
-
+	exit	0
 %install
-	rm -rf ${RPM_BUILD_ROOT}
-	make prefix=${RPM_BUILD_ROOT}%{prefix} install
-
+	install -D -m 0755 login-email.sh %{_sysconfdir}/profile.d/login-email.sh
+	install -D -m 0644 login-email.conf %{_sysconfdir}/login-email.conf
 %clean
-	rm -rf ${RPM_BUILD_ROOT}
+	exit	0
 
 %files
 %defattr(-,root,root)
 %doc AUTHORS COPYING README INSTALL NEWS LICENSE TODO
-%{_bindir}/%{name}
-%lang(en_US) %{_datadir}/locale/en_US/LC_MESSAGES/%{name}.mo
+%{_sysconfdir}/login-email.conf
+%{_sysconfdir}/profile.d/login-email.sh
 
 %changelog
 * Thu Apr  3 2014 Tommy Reynolds <oldest.software.guy@gmail.com>
