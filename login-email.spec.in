@@ -25,10 +25,11 @@ its first prompt.
 %prep
 %setup -q
 %build
-	./configure --prefix=%{prefix}
+	exit 0
 %install
 	rm -rf ${RPM_BUILD_ROOT}
-	make prefix=${RPM_BUILD_ROOT}%prefix install
+	install -D login-email.conf ${RPM_BUILD_ROOT}%{_sysconfdir}/login-email.conf
+	install -D login-email.sh ${RPM_BUILD_ROOT}%{_sysconfdir}/profile.d/login-email.sh
 %clean
 	rm -rf ${RPM_BUILD_ROOT}
 
