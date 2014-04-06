@@ -40,5 +40,5 @@ its first prompt.
 %{_sysconfdir}/profile.d/login-email.sh
 
 %changelog
-* Thu Apr  3 2014 Tommy Reynolds <oldest.software.guy@gmail.com>
-- Booger
+* Sun Apr  6 2014 Tommy Reynolds <oldest.software.guy@gmail.com>
+- Puts the files in the right place.
