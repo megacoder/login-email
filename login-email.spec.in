@@ -23,14 +23,14 @@ audit email as part of this process, before the login shell presents
 its first prompt.
 
 %prep
-	exit	0
+	%setup	-q
 %build
-	exit	0
+	./configure --prefix=%{prefix}
 %install
-	install -D -m 0755 login-email.sh %{_sysconfdir}/profile.d/login-email.sh
-	install -D -m 0644 login-email.conf %{_sysconfdir}/login-email.conf
+	rm -rf ${RPM_BUILD_ROOT}
+	make prefix=${RPM_BUILD_ROOT}%prefix install
 %clean
-	exit	0
+	rm -rf ${RPM_BUILD_ROOT}
 
 %files
 %defattr(-,root,root)
