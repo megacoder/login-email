@@ -23,7 +23,7 @@ audit email as part of this process, before the login shell presents
 its first prompt.
 
 %prep
-	%setup	-q
+%setup -q
 %build
 	./configure --prefix=%{prefix}
 %install

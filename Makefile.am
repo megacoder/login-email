@@ -15,5 +15,7 @@ EXTRA_DIST =							\
 
 sysconf_DATA = login-email.conf
 
-%{_sysconfdir}/profile.d/login-email.sh: login-email.sh
+install:: %{_sysconfdir}/profile.d/login-email.sh
+
+%{_sysconfdir}/profile.d/login-email.sh:: login-email.sh
 	install -D -m 0655 $< $@
