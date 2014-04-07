@@ -4,16 +4,17 @@
 
 Prefix: %{prefix}
 
-BuildArch : noarch
-Buildroot : %{_tmppath}/%{name}-root
-Group     : Applications/System
-License   : GPLv2
-Name      : login-email
-Release   : %{rel}
-Source    : http://ftp.megacoder.com/errno/%{name}-%{ver}.tar.gz
-Summary   : Automatically send an email as certain users log in.
-URL       : http://www.megacoder.com/
-Version   : %{ver}
+BuildArch     : noarch
+BuildRequires : lynx, python-markdown2
+Buildroot     : %{_tmppath}/%{name}-root
+Group         : Applications/System
+License       : GPLv2
+Name          : login-email
+Release       : %{rel}
+Source        : http://ftp.megacoder.com/errno/%{name}-%{ver}.tar.gz
+Summary       : Automatically send an email as certain users log in.
+URL           : http://www.megacoder.com/
+Version       : %{ver}
 
 %description
 An interesting event is when a login shell reads from the standard
