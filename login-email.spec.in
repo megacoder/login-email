@@ -36,7 +36,7 @@ its first prompt.
 %files
 %defattr(-,root,root)
 %doc AUTHORS COPYING README INSTALL NEWS LICENSE TODO
-%{_sysconfdir}/login-email.conf
+%attr(0644, -, -) %{_sysconfdir}/login-email.conf
 %{_sysconfdir}/profile.d/login-email.sh
 
 %changelog
