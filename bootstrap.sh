@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/zsh
 markdown2 README.md | tee README.html | lynx -dump -stdin >README
 autoreconf -fvim
 ./configure
