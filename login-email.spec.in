@@ -5,7 +5,6 @@
 Prefix: %{prefix}
 
 BuildArch     : noarch
-BuildRequires : lynx, python-markdown2
 Buildroot     : %{_tmppath}/%{name}-root
 Group         : Applications/System
 License       : GPLv2
@@ -36,7 +35,7 @@ its first prompt.
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING README INSTALL NEWS LICENSE TODO
+%doc AUTHORS COPYING README.md INSTALL NEWS LICENSE TODO
 %attr(0644, -, -) %{_sysconfdir}/login-email.conf
 %{_sysconfdir}/profile.d/login-email.sh
 
