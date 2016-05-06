@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.68])
-AC_INIT([login-email], [1.0.2], [oldest.software.guy@gmail.com])
+AC_INIT([login-email], [1.0.3], [oldest.software.guy@gmail.com])
 
 AM_INIT_AUTOMAKE
 AC_CONFIG_SRCDIR([login-email.sh])
