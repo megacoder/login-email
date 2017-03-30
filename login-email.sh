@@ -1,7 +1,5 @@
-#!/bin/zsh
 #!/bin/bash
-# MAILTO=root
-MAILTO=oldest.software.guy@gmail.com
+MAILTO=root
 
 CONFIG=/etc/login-email.conf
 
