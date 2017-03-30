@@ -1,5 +1,7 @@
+#!/bin/zsh
 #!/bin/bash
-MAILTO=root
+# MAILTO=root
+MAILTO=oldest.software.guy@gmail.com
 
 CONFIG=/etc/login-email.conf
 
@@ -14,7 +16,7 @@ if [ -f "${CONFIG}" ]; then
 	done
 fi
 
-if [ "${watchfor[${USER}]}" ]; then
+if [ "${watchfor}[${USER}]" ]; then
 	(
 		FMT='%7s:  %s\n'
 		/bin/printf "${FMT}" 'Date' "$(/bin/date)"
