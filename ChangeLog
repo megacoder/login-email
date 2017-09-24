@@ -1,0 +1,172 @@
+2015-09-08  Tommy Reynolds <reynolds@deluge.codemonkeyblackops.us>
+
+	* configure.ac: Bumped revision
+
+2015-09-08  Tommy Reynolds <reynolds@deluge.codemonkeyblackops.us>
+
+	* login-email.spec.in: Ship markdown, no need to render it.
+
+2014-12-01  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* bootstrap.zsh: Check for required RPM packages.
+
+2014-12-01  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* bootstrap.sh, bootstrap.zsh: Rename to new shell extention
+
+2014-12-01  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* bootstrap.sh: Changed shell
+
+2014-04-06  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* configure.ac: Bumped version.
+
+2014-04-07  Tommy Reynolds <oldest.software.guy@gmail.com>
+
+	* login-email.spec.in: Added build prerequisites: lynx, and
+	python-markdown2
+
+2014-04-06  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* configure.ac: Bumped
+
+2014-04-06  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* login-email.spec.in: Oops, the .conf file shouldn't have been
+	executable.
+
+2014-04-06  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Makefile.am, configure.ac, login-email.spec.in: Baseline
+
+2014-04-06  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Makefile.am, login-email.spec.in: Checkpoint
+
+2014-04-06  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Makefile.am, login-email.spec.in: Checkpoint
+
+2014-04-06  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* m4/KEEP-ME: Placeholder
+
+2014-04-06  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Makefile.am, login-email.spec.in: Checkpoint
+
+2014-04-06  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Makefile.am, bootstrap.sh, configure.ac, login-email.conf,
+	login-email.sh, login-email.spec.in, m4/KEEP-DIR, src/Makefile.am,
+	src/etc/Makefile.am, src/etc/login-email.conf,
+	src/etc/profile.d/Makefile.am, src/etc/profile.d/login-email.sh: 
+	Checkpoint
+
+2014-04-04  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* login-email.spec.in: Use 'BuildArch: noarch' to build non-specific
+	architecture.
+
+2014-04-03  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* INSTALL, login-email.spec.in: Checkpoint
+
+2014-04-03  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* bootstrap.sh: Build RPM package locally.
+
+2014-04-03  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* m4/KEEP-DIR: Boilerplate subdir
+
+2014-03-31  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* README.md: Added why you do want this.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* bootstrap.sh: Go ahead and build the RPM if the user is set up for
+	it.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Makefile.am, README, bootstrap.sh: The README.md is the origin
+	document for README and README.html
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Makefile.am: More boilerplate.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* LICENSE, TODO: boilerplate
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* src/etc/profile.d/Makefile.am, src/etc/profile.d/logil-email.sh,
+	src/etc/profile.d/login-email.sh: Spelling, please.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* bootstrap.sh, src/etc/profile.d/Makefile.am: Typing aid.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* configure.ac: Make the spec.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* login-email.spec.in: Pertinent details.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* login-email.spec.in: Imported spec file.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* configure.ac: Intermediaries
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Makefile.am: Do the right thang.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Makefile.am: Howto
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* AUTHORS, COPYING, ChangeLog, INSTALL, NEWS, README, configure.ac,
+	src/Makefile.am, src/etc/AUTHORS, src/etc/COPYING,
+	src/etc/ChangeLog, src/etc/INSTALL, src/etc/NEWS, src/etc/README,
+	src/etc/configure.ac: How to
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* src/etc/AUTHORS, src/etc/COPYING, src/etc/ChangeLog,
+	src/etc/INSTALL, src/etc/NEWS, src/etc/README, src/etc/configure.ac: 
+	Checkpoint
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* src/etc/Makefile.am: How to
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* src/etc/profile.d/Makefile.am: Stuff to operate on.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* src/etc/profile.d/logil-email.sh: Use simpler test for user watch.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* src/etc/login-email.conf, src/etc/profile.d/logil-email.sh: Added
+	script and config file.
+
+2012-10-29  Tommy Reynolds <Tommy.Reynolds@MegaCoder.com>
+
+	* Initial commit
+
