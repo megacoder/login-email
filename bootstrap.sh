@@ -1,5 +1,5 @@
 #!/bin/sh
-markdown2 README.md | tee README.html | lynx -dump -stdin >README
+markdown_py README.md | tee README.html | lynx -dump -stdin >README
 autoreconf -fvim
 ./configure
 make dist

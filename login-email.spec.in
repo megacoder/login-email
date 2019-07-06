@@ -5,7 +5,7 @@
 Prefix: %{prefix}
 
 BuildArch     : noarch
-BuildRequires : lynx, python-markdown2
+BuildRequires : lynx, python2-markdown
 Buildroot     : %{_tmppath}/%{name}-root
 Group         : Applications/System
 License       : GPLv2

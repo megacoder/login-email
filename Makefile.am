@@ -19,4 +19,3 @@ install:: ${sysconfdir}/profile.d/login-email.sh
 
 ${sysconfdir}/profile.d/login-email.sh:: login-email.sh
 	install -D -m 0655 $< $@
-
