@@ -12,7 +12,7 @@ License       : GPLv2
 Name          : login-email
 Release       : %{rel}
 Source        : http://ftp.megacoder.com/errno/%{name}-%{ver}.tar.gz
-Summary       : Automatically send an email as certain users log in.
+Summary       : Automatically send an email as certain users log in
 URL           : http://www.megacoder.com/
 Version       : %{ver}
 
@@ -36,7 +36,7 @@ its first prompt.
 
 %files
 %defattr(-,root,root)
-%doc AUTHORS COPYING README INSTALL NEWS LICENSE TODO
+%doc AUTHORS COPYING README.md INSTALL NEWS LICENSE TODO
 %attr(0644, -, -) %{_sysconfdir}/login-email.conf
 %{_sysconfdir}/profile.d/login-email.sh
 
